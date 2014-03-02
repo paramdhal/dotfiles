@@ -10,6 +10,10 @@
 	last = log -1 HEAD
 	# Commit all changes
 	ca = !git add -A && git commit -av
+	# Find commits by commit message
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+	# Find commits by source code
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 [core]
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
