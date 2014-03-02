@@ -8,6 +8,8 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	la = "!git config -l | grep alias | cut -c 7-"
 	last = log -1 HEAD
+	# Commit all changes
+	ca = !git add -A && git commit -av
 [core]
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
