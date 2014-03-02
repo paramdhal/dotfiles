@@ -20,4 +20,4 @@
 
 [include]
 	# For username / creds / etc
-	path = gitconfig.local
+	path = ~/dotfiles/gitconfig.local
