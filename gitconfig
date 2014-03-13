@@ -48,3 +48,6 @@
 [include]
 	# For username / creds / etc
 	path = ~/dotfiles/gitconfig.local
+[pull]
+	# pull will only do fastforwards
+	ff = only
