@@ -17,4 +17,9 @@ Create a gitconfig.local file in the dotfiles directory for local config such as
     email = paramdhal@gmail.com
 [credential]
     helper = osxkeychain
+
+# if using git 2.0
+[push]
+	default = simple
+
 ```
