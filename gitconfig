@@ -16,6 +16,7 @@
 	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard
+	amend = "!git add -A && git commit --amend"
 
 [core]
 	editor = vim
