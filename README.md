@@ -20,6 +20,6 @@ Create a gitconfig.local file in the dotfiles directory for local config such as
 
 # if using git 2.0
 [push]
-	default = simple
+	default = matching
 
 ```
