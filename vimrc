@@ -48,6 +48,7 @@ set mouse=v             " use mouse in visual mode (not normal,insert,command,he
 " color settings (if terminal/gui supports it)
 if &t_Co > 2 || has("gui_running")
   syntax on          " enable colors
+  au BufRead,BufNewFile *.iphp set filetype=php		" set syntax for iphp files
   set hlsearch       " highlight search (very useful!)
   set incsearch      " search incremently (search while typing)
 endif
