@@ -22,4 +22,11 @@ Create a gitconfig.local file in the dotfiles directory for local config such as
 [push]
 	default = matching
 
+[merge]
+    tool = sublimerge
+
+[mergetool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+	trustExitCode = false
+
 ```
