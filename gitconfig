@@ -19,6 +19,7 @@
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard
 	amend = "!git add -A && git commit --amend"
+	alias = "!git config --get-regexp ^alias."
 
 [core]
 	editor = vim
